@@ -1,36 +1,94 @@
 body
 {
+    background-color: rgb(247,236,222);
+}
+.container {
     text-align: center;
 }
-
 h1
 {
-    font-family: Impact;
-    font-size: 80px;
-    font-weight: 700;
+    
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+    color: rgb(53, 46, 40);
+    font-size: 50px;
+    font-weight: 60px;
+}
+h1::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 18%;
+    left: 0;
+    bottom: 40px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+h1:hover::after
+{
+    height: 30%;
+}
+h2 {
+    font-family: Righteous, cursive;
+    font-size: 25px;
+    background: linear-gradient(to right, rgb(60, 165, 92), rgb(237, 218, 10));
+    background-clip: text;
+    color: transparent;
+}
+.dott1{
+    border-bottom:  3px dotted black;
+}
+.dott2{
+    border-top:  3px dotted black;
+}
+.popup
+{
+    width: 500px;
+    height: 250px;
+    background-color:#FFFFFF;
+    z-index: 1;
+}
+.circle span:nth-child(1)
+{
+background-color: #f15f5d;
+width: 20px;
+height: 20px;
+}
+.circle span:nth-child(2)
+{
+background-color: #febe2e;
+width: 20px;
+height: 20px;
+}
+.circle span:nth-child(3)
+{
+background-color: #4db748;
+width: 20px;
+height: 20px;
 }
 
-p , .quoteStyle
+.popup ul i
 {
-    font-family: Times New Roman;
-    font-size: 35px;
+    color: #bb4120;
+}
+.popup p
+{
+    font-family: "Bree Serif", serif;
+    font-size:21px;
+    line-height: 27px;
+    font-weight: 400;
+}
+.popup li
+{
+    font-family: "Bree Serif", serif;
+    font-size:19px;
+    line-height: 27px;
     font-weight: 400;
 }
 
-.btnStyle
-{
-    font-family: Arial;
-    font-size: 13px;
-    font-weight: 400;
-    width: 250px;
-    height: 90px;
-    background-color: blue;
-    color: white;
-    margin-bottom: 80px;
+.overlay {
+    background-color:#0007; 
 }
-
-.btnStyle:hover
-{
-    background-color: green;
-}
-

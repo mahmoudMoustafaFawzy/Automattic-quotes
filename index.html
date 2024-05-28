@@ -1,15 +1,27 @@
 <html>
     <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
 
         <div class="container">
-            <h1>Quote of the Day</h1>
-            <p>press the button below to recieve a random quote</p>
-            <button class="btnStyle" onclick="test()" id="btn">New Quote</button>
-            <div class="quoteStyle"  id="outPut"></div>
-
+            <h1>Bookmarker</h1>
+            <h2>Bookmark your favorite sites</h2>
+            <label for="">Site Name</label>
+            <input placeholder="Bookmark Name" type="text">
+            <label for="">Site URL</label>
+            <input placeholder="Website URL" type="text">
+            <button class="btn btn-danger">Submit</button>
+            <table>
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+            </table>
         </div>
 
         <script src="js/index.js"></script>
